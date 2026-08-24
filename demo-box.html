@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>两个盒子演示 margin / padding / border</title>
+    <style>
+        /* 两个盒子共用的样式 */
+        .box {
+            width: 200px;
+            background: #3498db;      /* 蓝色背景，覆盖 padding + 内容区 */
+            color: white;
+            border: 10px solid #e67e22; /* 橙色边框 */
+            border-radius: 6px;
+
+            /* ⭐ 关键属性 —— 动手改下面两个值 */
+            padding: 10px;   /* 内边距（文字与边框的距离） */
+            margin: 50px;    /* 外边距（两个盒子之间的距离） */
+        }
+
+        /* 让第二个盒子换个颜色，便于区分 */
+        .box2 {
+            background: #e74c3c; /* 红色 */
+            border-color: #2c3e50;
+        }
+
+        body {
+            background: #ecf0f1; /* 浅灰色背景 */
+            /* display: flex; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">盒子1 - 一段文本灌灌灌灌灌灌灌灌灌灌灌灌灌灌灌灌灌</div>
+    <div class="box box2">盒子2 - 另一段文本</div>
+</body>
+</html>
