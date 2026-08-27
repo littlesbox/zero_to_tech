@@ -20,3 +20,5 @@ dist/
 backend/__pycache__/
 *.pyc
 .venv
+*.db
+history.json
